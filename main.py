@@ -14,7 +14,16 @@ async def get_level(input):
     if input == "":
         return
     level = await find_level_from_server(int(input))
-    file = filedialog.asksaveasfile(mode="w", defaultextension=".txt")
+    file = filedialog.asksaveasfilename(
+        defaultextension='.txt',
+        filetypes=(
+            ("Text files", "*.txt"),
+            ("All files", "*.*")
+        ),
+        initialfile=level.name + '.txt'
+    )
+    if not file:
+        return
     file.write(level.download())
     file.close()
     print(level.name + " - " + level.creator.name)
