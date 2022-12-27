@@ -1,0 +1,13 @@
+[project]
+name = "GDExport"
+description = "A simple tool to easily download the data of online levels from Geometry Dash."
+version = "0.1.0"
+authors = [
+    { name = "Lugo_Sieben" }
+]
+dependencies = [
+    "asyncio",
+    "customtkinter",
+    "gd.py",
+    "future"
+]
