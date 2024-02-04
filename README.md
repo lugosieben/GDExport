@@ -1,3 +1,5 @@
+# 🚨 Deprecated and not working since release of 2.2 🚨
+
 # GDExport
 
 GDExport is a simple tool made for downloading the data of Geometry Dash levels.
